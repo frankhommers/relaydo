@@ -6,13 +6,13 @@ import org.junit.Test
 class UpdatePolicyTest {
     private val cert = "546f8d56f4f13beec65be2ff882cef169e87f03a6c7a715bdef79d060aeec123"
     private val sha = "a".repeat(64)
-    private fun manifestJson(build: Int = 59, code: Int = 100000 + build, pkg: String = "nl.hommers.smsforwarder", apk: String = "SmsForwarder-$build-debug.apk", extra: String = "") =
+    private fun manifestJson(build: Int = 59, code: Int = 100000 + build, pkg: String = "tools.franks.relaydo", apk: String = "SmsForwarder-$build-debug.apk", extra: String = "") =
         """{"format":1,"packageName":"$pkg","buildNumber":$build,"versionCode":$code,"versionName":"3.5.1-test.$build","apk":"$apk","apkSize":1234,"apkSha256":"$sha","certSha256":"$cert"$extra}"""
 
     private fun release(build: Int, manifest: Boolean = true, apkHost: String = "github.com", tag: String = "build-$build", draft: Boolean = false): String {
-        val base = "https://$apkHost/frankhommers/SmsForwarder/releases/download/$tag"
-        val m = if (manifest) """,{"name":"smsforwarder-update.json","size":400,"url":"https://api.github.com/repos/frankhommers/SmsForwarder/releases/assets/2","browser_download_url":"https://github.com/frankhommers/SmsForwarder/releases/download/$tag/smsforwarder-update.json"}""" else ""
-        return """{"tag_name":"$tag","name":"Test build $build","draft":$draft,"prerelease":true,"assets":[{"name":"SmsForwarder-$build-debug.apk","size":1234,"url":"https://api.github.com/repos/frankhommers/SmsForwarder/releases/assets/1","browser_download_url":"$base/SmsForwarder-$build-debug.apk"}$m]}"""
+        val base = "https://$apkHost/frankhommers/relaydo/releases/download/$tag"
+        val m = if (manifest) """,{"name":"smsforwarder-update.json","size":400,"url":"https://api.github.com/repos/frankhommers/relaydo/releases/assets/2","browser_download_url":"https://github.com/frankhommers/relaydo/releases/download/$tag/smsforwarder-update.json"}""" else ""
+        return """{"tag_name":"$tag","name":"Test build $build","draft":$draft,"prerelease":true,"assets":[{"name":"SmsForwarder-$build-debug.apk","size":1234,"url":"https://api.github.com/repos/frankhommers/relaydo/releases/assets/1","browser_download_url":"$base/SmsForwarder-$build-debug.apk"}$m]}"""
     }
 
     @Test fun manifestParsing() {
@@ -42,8 +42,8 @@ class UpdatePolicyTest {
     }
 
     @Test fun hostAllowList() {
-        assertTrue(UpdatePolicy.isAllowedUrl("https://api.github.com/repos/frankhommers/SmsForwarder/releases?per_page=10"))
-        assertTrue(UpdatePolicy.isAllowedUrl("https://github.com/frankhommers/SmsForwarder/releases/download/build-59/x.apk"))
+        assertTrue(UpdatePolicy.isAllowedUrl("https://api.github.com/repos/frankhommers/relaydo/releases?per_page=10"))
+        assertTrue(UpdatePolicy.isAllowedUrl("https://github.com/frankhommers/relaydo/releases/download/build-59/x.apk"))
         assertTrue(UpdatePolicy.isAllowedUrl("https://release-assets.githubusercontent.com/github-production-release-asset/1/2?sig=x"))
         assertTrue(UpdatePolicy.isAllowedUrl("https://objects.githubusercontent.com/x"))
         assertFalse(UpdatePolicy.isAllowedUrl("http://github.com/x"))
@@ -60,10 +60,10 @@ class UpdatePolicyTest {
         assertFalse(UpdatePolicy.isAllowedUrl(null))
         assertTrue(UpdatePolicy.isAllowedHost("GitHub.com."))
         // The release download path must be this repository and this tag exactly.
-        assertTrue(UpdatePolicy.isReleaseDownloadUrl("https://github.com/frankhommers/SmsForwarder/releases/download/build-59/a.apk", "build-59", "a.apk"))
-        assertFalse(UpdatePolicy.isReleaseDownloadUrl("https://github.com/someone/SmsForwarder/releases/download/build-59/a.apk", "build-59", "a.apk"))
-        assertFalse(UpdatePolicy.isReleaseDownloadUrl("https://github.com/frankhommers/SmsForwarder/releases/download/build-60/a.apk", "build-59", "a.apk"))
-        assertFalse(UpdatePolicy.isReleaseDownloadUrl("https://objects.githubusercontent.com/frankhommers/SmsForwarder/releases/download/build-59/a.apk", "build-59", "a.apk"))
+        assertTrue(UpdatePolicy.isReleaseDownloadUrl("https://github.com/frankhommers/relaydo/releases/download/build-59/a.apk", "build-59", "a.apk"))
+        assertFalse(UpdatePolicy.isReleaseDownloadUrl("https://github.com/someone/relaydo/releases/download/build-59/a.apk", "build-59", "a.apk"))
+        assertFalse(UpdatePolicy.isReleaseDownloadUrl("https://github.com/frankhommers/relaydo/releases/download/build-60/a.apk", "build-59", "a.apk"))
+        assertFalse(UpdatePolicy.isReleaseDownloadUrl("https://objects.githubusercontent.com/frankhommers/relaydo/releases/download/build-59/a.apk", "build-59", "a.apk"))
     }
 
     @Test fun redirectResolutionAndTransport() {
@@ -100,7 +100,7 @@ class UpdatePolicyTest {
     private fun assertThrowsAny(block: () -> Unit) { try { block() } catch (_: Exception) { return }; fail("expected exception") }
 
     private val m = UpdatePolicy.parseManifest(manifestJson())!!
-    private fun facts(size: Long = 1234, sha256: String = sha, pkg: String? = "nl.hommers.smsforwarder", code: Long? = 100059, apkCert: Set<String> = setOf(cert), installed: Long = 100058, installedCert: Set<String> = setOf(cert)) =
+    private fun facts(size: Long = 1234, sha256: String = sha, pkg: String? = "tools.franks.relaydo", code: Long? = 100059, apkCert: Set<String> = setOf(cert), installed: Long = 100058, installedCert: Set<String> = setOf(cert)) =
         UpdatePolicy.Facts(size, sha256, pkg, code, apkCert, installed, installedCert)
 
     @Test fun verificationDecisions() {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="updater_title">Updates</string>
-    <string name="updater_source">Test builds from GitHub Releases of frankhommers/SmsForwarder. Checked over HTTPS; GitHub sees your IP address.</string>
+    <string name="updater_source">Test builds from GitHub Releases of frankhommers/relaydo. Checked over HTTPS; GitHub sees your IP address.</string>
     <string name="updater_auto_check">Check automatically once a day</string>
     <string name="updater_check_now">Check now</string>
     <string name="updater_installed_build">Version code: %1$s</string>

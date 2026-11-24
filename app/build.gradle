@@ -68,7 +68,7 @@ android {
     def gitCommitId = getGitCommitId()
 
     defaultConfig {
-        applicationId "nl.hommers.smsforwarder"
+        applicationId "tools.franks.relaydo"
         // Package only supported locales, including resources from dependencies.
         resConfigs 'en', 'nl'
         minSdkVersion build_versions.min_sdk

@@ -27,7 +27,7 @@
     <string name="copy_url_opened">URL geopend.</string>
     <string name="copy_server_private_key">Er is geen RSA-privésleutel ingesteld op de server.</string>
     <string name="copy_server_sm4_key">Er is geen SM4-sleutel ingesteld op de server.</string>
-    <string name="copy_foreground_channel">SmsForwarder-achtergrondservice</string>
+    <string name="copy_foreground_channel">Relaydo-achtergrondservice</string>
     <string name="copy_add_recipient">Ontvanger toevoegen</string>
     <string name="copy_pick_contact">Kiezen uit contacten</string>
     <string name="copy_reply_sender">Oorspronkelijke afzender gebruiken ({{FROM}})</string>

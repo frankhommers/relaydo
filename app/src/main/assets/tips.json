@@ -2,7 +2,7 @@
   "Code": 0,
   "Data": [
     {
-      "title": "SmsForwarder Private",
+      "title": "Relaydo",
       "content": "Configure a forwarding destination, then a rule. Only enable permissions and automation you need. Never share authentication codes with untrusted recipients."
     },
     {

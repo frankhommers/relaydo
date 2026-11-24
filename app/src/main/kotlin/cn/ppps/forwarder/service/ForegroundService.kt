@@ -379,7 +379,7 @@ class ForegroundService : Service() {
         if (largeIconResId != null) {
             builder.setLargeIcon(BitmapFactory.decodeResource(resources, largeIconResId))
         } else {
-            builder.setLargeIcon(BitmapFactory.decodeResource(resources, R.drawable.ic_menu_frpc))
+            builder.setLargeIcon(BitmapFactory.decodeResource(resources, R.drawable.relaydo_notification_large))
         }
 
         // Add Stop button (optional)）

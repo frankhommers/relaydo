@@ -1,4 +1,4 @@
-SmsForwarder Private — lokale privacyverklaring
+Relaydo — lokale privacyverklaring
 
 Dit is een onafhankelijke, op privacy gerichte fork van SmsForwarder van pppscn en andere bijdragers.
 

@@ -16,8 +16,8 @@ import java.util.Locale
  */
 object UpdatePolicy {
     const val OWNER = "frankhommers"
-    const val REPO = "SmsForwarder"
-    const val PACKAGE_NAME = "nl.hommers.smsforwarder"
+    const val REPO = "relaydo"
+    const val PACKAGE_NAME = "tools.franks.relaydo"
 
     /** The only API endpoint the updater ever requests. */
     const val RELEASES_URL = "https://api.github.com/repos/$OWNER/$REPO/releases?per_page=10"

@@ -17,5 +17,5 @@
     <string name="infra_form_help_online_note">The help above works offline. The button opens the project page on GitHub, which sees your IP address.</string>
     <string name="infra_form_about_upstream">Original project</string>
     <string name="infra_form_about_fork">This version</string>
-    <string name="infra_form_url_project_fork" translatable="false">https://github.com/frankhommers/SmsForwarder</string>
+    <string name="infra_form_url_project_fork" translatable="false">https://github.com/frankhommers/relaydo</string>
 </resources>

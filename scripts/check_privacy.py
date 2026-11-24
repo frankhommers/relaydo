@@ -41,7 +41,7 @@ class UpdaterGateTests(unittest.TestCase):
                 self.assertTrue(url.startswith('https://'), f'{name}: {url}')
         policy = sources['UpdatePolicy.kt']
         self.assertIn('const val OWNER = "frankhommers"', policy)
-        self.assertIn('const val REPO = "SmsForwarder"', policy)
+        self.assertIn('const val REPO = "relaydo"', policy)
         self.assertIn('"https://api.github.com/repos/$OWNER/$REPO/releases?per_page=10"', policy)
         self.assertIn('private val EXACT_HOSTS = setOf("api.github.com", "github.com")', policy)
         self.assertIn('private const val ASSET_HOST_SUFFIX = ".githubusercontent.com"', policy)
@@ -93,7 +93,7 @@ class UpdaterGateTests(unittest.TestCase):
         layout = (MAIN / 'res/layout/fragment_about.xml').read_text()
         self.assertIn('android:id="@+id/scb_auto_check_update"', layout)
         readme = (ROOT / 'README_PRIVACY.md').read_text()
-        self.assertIn('api.github.com/repos/frankhommers/SmsForwarder/releases', readme)
+        self.assertIn('api.github.com/repos/frankhommers/relaydo/releases', readme)
 
 
 class PrivacySourceTests(unittest.TestCase):
@@ -159,7 +159,7 @@ class PrivacySourceTests(unittest.TestCase):
         self.assertEqual([], source_gate()['failures'])
 
     def test_distinct_application_id(self):
-        self.assertIn('applicationId "nl.hommers.smsforwarder"', (ROOT / 'app/build.gradle').read_text())
+        self.assertIn('applicationId "tools.franks.relaydo"', (ROOT / 'app/build.gradle').read_text())
         self.assertIn('const val PACKAGE_NAME = cn.ppps.forwarder.BuildConfig.APPLICATION_ID', (CODE / 'utils/Constants.kt').read_text())
 
     def test_license_unchanged(self):

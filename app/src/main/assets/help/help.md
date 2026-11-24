@@ -1,4 +1,6 @@
-# SmsForwarder Private – Help
+# Relaydo – Help
+
+Relaydo · franks.tools
 
 This help is part of the app and works without an internet connection.
 

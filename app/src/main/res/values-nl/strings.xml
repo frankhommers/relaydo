@@ -79,7 +79,7 @@
     <string name="about_item_donation_link">Donateurs</string>
     <string name="url_project_github">https://github.com/pppscn/SmsForwarder</string>
     <string name="url_project_gitee">https://github.com/pppscn/SmsForwarder</string>
-    <string name="url_help">https://github.com/frankhommers/SmsForwarder/blob/main/README_PRIVACY.md</string>
+    <string name="url_help">https://github.com/frankhommers/relaydo/blob/main/README_PRIVACY.md</string>
     <string name="url_donation_link" />
     <string name="url_wechat_miniprogram" />
     <string name="url_tips" />
@@ -121,8 +121,8 @@
     <string name="copySuccess">Met succes gekopieerd</string>
     <string name="tipServiceRunning">Reverse-proxytunnelclient is actief</string>
     <string name="tipWaitService">Service wordt gestart</string>
-    <string name="app_name">SmsForwarder Private</string>
-    <string name="notification_content">SmsForwarder is actief op de achtergrond. Doorsturen gebeurt volgens uw instellingen en regels.</string>
+    <string name="app_name">Relaydo</string>
+    <string name="notification_content">Relaydo is actief op de achtergrond. Doorsturen gebeurt volgens uw instellingen en regels.</string>
     <string name="cancel">Annuleren</string>
     <string name="discard">Verwerpen</string>
     <string name="del">Verwijderen</string>
@@ -387,7 +387,7 @@
     <string name="system_app">Systeemapp</string>
     <string name="tips_get_installed_apps">Gelieve GET_INSTALLED_APPS-toestemming te verlenen</string>
     <string name="tips_notification">Sta meldingen toe zodat de app de melding voor de achtergrondservice kan tonen.</string>
-    <string name="tips_notification_listener">Geef SmsForwarder toegang tot meldingen om meldingen van andere apps door te sturen. Het doorsturen van meldingen is uitgeschakeld.</string>
+    <string name="tips_notification_listener">Geef Relaydo toegang tot meldingen om meldingen van andere apps door te sturen. Het doorsturen van meldingen is uitgeschakeld.</string>
     <string name="pushplus_website">Officiële website</string>
     <string name="pushplus_plus">www.pushplus.plus</string>
     <string name="pushplus_hxtrip">pushplus.hxtrip.com</string>
@@ -485,7 +485,7 @@
     <string name="seconds">sec</string>
     <string name="seconds_n">%d sec</string>
     <string name="retry_label">Maximaal aantal nieuwe pogingen</string>
-    <string name="test_sender_sms">[%s] Dit is een testbericht van SmsForwarder voor deze bestemming.</string>
+    <string name="test_sender_sms">[%s] Dit is een testbericht van Relaydo voor deze bestemming.</string>
     <string name="test_sender_name">Testbestemming</string>
     <string name="test_sim_info" ns0:ignore="Typos">SIM1_TestOperator_18888888888</string>
     <string name="keep_reminding">Ook voorbij de grens activeren</string>
@@ -570,7 +570,7 @@
     <string name="bark_server_regex">^https?://[^/]+/[^/]+/.*</string>
     <string name="bark_server_error">Vul een URL in zoals https://api.day.app/XXXXXXXX/</string>
     <string name="bark_group">Groepnaam</string>
-    <string name="bark_group_tips">Optioneel, bijvoorbeeld SmsForwarder</string>
+    <string name="bark_group_tips">Optioneel, bijvoorbeeld Relaydo</string>
     <string name="bark_icon">Berichtpictogram</string>
     <string name="bark_icon_tips">Optionele afbeeldings-URL. Gebruik een kleine afbeelding.</string>
     <string name="bark_call">Blijven herinneren</string>

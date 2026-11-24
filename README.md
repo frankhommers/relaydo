@@ -1,10 +1,10 @@
-# SmsForwarder privacy fork
+# Relaydo
 
-![SmsForwarder](pic/SmsForwarder.png)
+![Relaydo](branding/relaydo/relaydo-logo.png)
 
 This fork of [pppscn/SmsForwarder](https://github.com/pppscn/SmsForwarder) monitors Android SMS, calls and application notifications and forwards them according to configured rules. Destinations include email, SMS, Telegram, Bark, Webhook, Socket, DingTalk, WeCom, Feishu, ServerChan and PushPlus. Remote-control client/server features support SMS, calls, contacts and battery queries. Automated tasks combine event conditions with actions.
 
-Read [README_PRIVACY.md](README_PRIVACY.md) for removed telemetry, secure defaults, disabled native downloads and the owner-approved public-IP service. The application ID is `nl.hommers.smsforwarder`. Debug builds are test artifacts, not production releases.
+Read [README_PRIVACY.md](README_PRIVACY.md) for removed telemetry, secure defaults, disabled native downloads and the owner-approved public-IP service. The application ID is `tools.franks.relaydo`. Debug builds are test artifacts, not production releases.
 
 ## Languages
 
@@ -19,7 +19,7 @@ English is the first-run default. Settings offers **English**, **Nederlands** an
 
 For troubleshooting, verify permissions, test the selected channel, check the rule, then inspect the forwarding log.
 
-Automatic updating and native-library downloading are disabled in this privacy fork; use local builds instead. Upstream screenshots and diagrams (including the partially translated chart) were removed because they contained Chinese labels.
+The optional in-app updater checks this repository’s GitHub Releases for signed test builds. Native-library downloading remains disabled. Upstream screenshots and diagrams (including the partially translated chart) were removed because they contained Chinese labels.
 
 ## Build and verification
 

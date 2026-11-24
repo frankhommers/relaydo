@@ -1,4 +1,4 @@
-SmsForwarder Private — usage and attribution
+Relaydo — usage and attribution
 
 Use this application only on devices and accounts you control and with appropriate consent. Forwarding messages may disclose passwords, authentication codes and personal information. No warranty is provided.
 

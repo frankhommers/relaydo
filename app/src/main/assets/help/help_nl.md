@@ -1,4 +1,6 @@
-# SmsForwarder Private – Hulp
+# Relaydo – Hulp
+
+Relaydo · franks.tools
 
 Deze hulp zit in de app en werkt zonder internetverbinding.
 

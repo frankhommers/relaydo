@@ -86,7 +86,7 @@
     <string name="about_item_donation_link">Reward List</string>
     <string name="url_project_github">https://github.com/pppscn/SmsForwarder</string>
     <string name="url_project_gitee">https://github.com/pppscn/SmsForwarder</string>
-    <string name="url_help">https://github.com/frankhommers/SmsForwarder/blob/main/README_PRIVACY.md</string>
+    <string name="url_help">https://github.com/frankhommers/relaydo/blob/main/README_PRIVACY.md</string>
     <string name="url_donation_link"></string>
     <string name="url_wechat_miniprogram"></string>
     <string name="url_tips"></string>
@@ -137,8 +137,8 @@
     <string name="tipServiceRunning">Reverse-proxy tunnel client is running</string>
     <string name="tipWaitService">Starting service</string>
 
-    <string name="app_name">SmsForwarder Private</string>
-    <string name="notification_content">SmsForwarder is running in the background. Forwarding follows your settings and rules.</string>
+    <string name="app_name">Relaydo</string>
+    <string name="notification_content">Relaydo is running in the background. Forwarding follows your settings and rules.</string>
     <!--Common-->
     <string name="cancel">Cancel</string>
     <string name="discard">Discard</string>
@@ -412,7 +412,7 @@
     <string name="system_app">System App</string>
     <string name="tips_get_installed_apps">Please grant GET_INSTALLED_APPS permission</string>
     <string name="tips_notification">Allow notifications so the app can show its background service notification.</string>
-    <string name="tips_notification_listener">Grant SmsForwarder notification access to forward notifications from other apps. Notification forwarding has been disabled.</string>
+    <string name="tips_notification_listener">Grant Relaydo notification access to forward notifications from other apps. Notification forwarding has been disabled.</string>
     <string name="pushplus_website">Official website</string>
     <string name="pushplus_plus">www.pushplus.plus</string>
     <string name="pushplus_hxtrip">pushplus.hxtrip.com</string>
@@ -510,7 +510,7 @@
     <string name="seconds">secs</string>
     <string name="seconds_n">%d sec</string>
     <string name="retry_label">Maximum Retries</string>
-    <string name="test_sender_sms">[%s] This is a target test message from SmsForwarder.</string>
+    <string name="test_sender_sms">[%s] This is a target test message from Relaydo.</string>
     <string name="test_sender_name">Test Target</string>
     <string name="test_sim_info" tools:ignore="Typos">SIM1_TestOperator_18888888888</string>
     <string name="keep_reminding">Also trigger beyond the threshold</string>
@@ -600,7 +600,7 @@
     <string name="bark_server_regex">^https?://[^/]+/[^/]+/.*</string>
     <string name="bark_server_error">Enter a URL such as https://api.day.app/XXXXXXXX/</string>
     <string name="bark_group">Group Name</string>
-    <string name="bark_group_tips">Optional, e.g. SmsForwarder</string>
+    <string name="bark_group_tips">Optional, e.g. Relaydo</string>
     <string name="bark_icon">Message Icon</string>
     <string name="bark_icon_tips">Optional image URL. Use a small image.</string>
     <string name="bark_call">Keep Reminding</string>

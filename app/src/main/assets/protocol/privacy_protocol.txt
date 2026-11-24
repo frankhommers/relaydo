@@ -1,4 +1,4 @@
-SmsForwarder Private — local privacy notice
+Relaydo — local privacy notice
 
 This is an independent privacy-focused fork of SmsForwarder by pppscn and contributors.
 

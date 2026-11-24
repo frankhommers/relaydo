@@ -27,7 +27,7 @@
     <string name="copy_url_opened">URL opened.</string>
     <string name="copy_server_private_key">No RSA private key is configured on the server.</string>
     <string name="copy_server_sm4_key">No SM4 key is configured on the server.</string>
-    <string name="copy_foreground_channel">SmsForwarder Background Service</string>
+    <string name="copy_foreground_channel">Relaydo Background Service</string>
     <string name="copy_add_recipient">Add Recipient</string>
     <string name="copy_pick_contact">Choose from Contacts</string>
     <string name="copy_reply_sender">Use Original Sender ({{FROM}})</string>

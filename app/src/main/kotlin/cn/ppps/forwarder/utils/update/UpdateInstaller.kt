@@ -28,7 +28,7 @@ import java.security.MessageDigest
  */
 object UpdateInstaller {
     private const val TAG = "Updater"
-    const val ACTION_STATUS = "nl.hommers.smsforwarder.UPDATE_INSTALL_STATUS"
+    const val ACTION_STATUS = "tools.franks.relaydo.UPDATE_INSTALL_STATUS"
     const val CHANNEL_ID = "app_updates"
     private const val NOTIFY_ID = 0x5F0D
 

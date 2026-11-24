@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cut an updater release of SmsForwarder Private (debug test build) and, separately, publish it.
+"""Cut an updater release of Relaydo (debug test build) and, separately, publish it.
 
   python3 scripts/release.py build [--build-number N]     build, verify and stage into dist/build-N/
   python3 scripts/release.py publish --build-number N     upload dist/build-N/ as a GitHub PRE-RELEASE (gh CLI)
@@ -26,8 +26,8 @@ from pathlib import Path
 from typing import NoReturn
 
 ROOT = Path(__file__).resolve().parents[1]
-OWNER_REPO = 'frankhommers/SmsForwarder'
-PACKAGE = 'nl.hommers.smsforwarder'
+OWNER_REPO = 'frankhommers/relaydo'
+PACKAGE = 'tools.franks.relaydo'
 EXPECTED_CERT_SHA256 = '546f8d56f4f13beec65be2ff882cef169e87f03a6c7a715bdef79d060aeec123'
 MANIFEST_NAME = 'smsforwarder-update.json'
 TAG_PREFIX = 'build-'
